@@ -1,6 +1,6 @@
-function [k, cores] = kCores(country, cumulative)
+function [k, cores] = kCores(edges, country, cumulative)
 
-[nodes, nbs] = coreNumbers(country);
+[nodes, nbs] = coreNumbers(edges, country);
 
 unique_numbers = flipud(unique(nbs));
 k = length(unique_numbers);
